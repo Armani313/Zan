@@ -11,6 +11,11 @@ export const Form = () => {
 
       <label htmlFor="asd">Asd</label>
       <input id="asd" className="border border-gray-500" onChange={(e) => editAsd(e.target.value)} />
+    <a target="_blank" href={"/assets/file.pdf"}> <button>
+        скачать
+        </button>
+    </a>
     </div>
+
   )
 }

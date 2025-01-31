@@ -2909,3 +2909,13 @@ li.menu-item-has-children.active .menu-expand {
 		background-size: contain !important;
 	}
 }
+
+.has-child {
+	list-style: none !important; /* Принудительно убирает стандартные маркеры в списках*/
+}
+
+.has-child::before,
+.has-child::after {
+	content: none !important; /* Убирает любые дополнительные элементы */
+	display: none !important;
+}

@@ -34,13 +34,13 @@ const Slider1 = () => {
 								<div>
 									<h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
 										<Link href="/services" legacyBehavior>
-											User growth
+											Форум
 										</Link>
 									</h1>
-									<p className="mt-2 text-xs text-gray-500">Harvard university</p>
+									<p className="mt-2 text-xs text-gray-500">Обсуждение кейсов</p>
 								</div>
 								<div>
-									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details
+									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">Просмотр
 									</Link>
 								</div>
 							</div>
@@ -59,13 +59,13 @@ const Slider1 = () => {
 								<div>
 									<h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
 										<Link href="/services" legacyBehavior>
-											Products
+											Чат-бот
 										</Link>
 									</h1>
-									<p className="mt-2 text-xs text-gray-500">Cocacola., Co</p>
+									<p className="mt-2 text-xs text-gray-500">на основе ИИ</p>
 								</div>
 								<div>
-									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details
+									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">Задать вопрос
 									</Link>
 								</div>
 							</div>
@@ -84,13 +84,13 @@ const Slider1 = () => {
 								<div>
 									<h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
 										<Link href="/services" legacyBehavior>
-											Event
+											Консультация
 										</Link>
 									</h1>
-									<p className="mt-2 text-xs text-gray-500">Oxford university</p>
+									<p className="mt-2 text-xs text-gray-500">Проффесионалы не спят</p>
 								</div>
 								<div>
-									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details
+									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">Звонок
 									</Link>
 								</div>
 							</div>
@@ -109,13 +109,13 @@ const Slider1 = () => {
 								<div>
 									<h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
 										<Link href="/services" legacyBehavior>
-											Shopping
+											Отзывы
 										</Link>
 									</h1>
-									<p className="mt-2 text-xs text-gray-500">Alibaba Co</p>
+									<p className="mt-2 text-xs text-gray-500">рейтинг юристов</p>
 								</div>
 								<div>
-									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details
+									<Link href="/services" className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">Голосовать
 									</Link>
 								</div>
 							</div>

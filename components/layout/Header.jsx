@@ -22,8 +22,8 @@ const Header = ({ handleHidden }) => {
 								className="h-10"
 								src="/assets/imgs/logos/DALL_E-2025-01-31-12.17-removebg.svg"
 								alt="ZanNavigator"
-								width={125}
-								height={40}
+								width={70}
+								height={100}
 							/>
 
 						</Link>
@@ -31,8 +31,7 @@ const Header = ({ handleHidden }) => {
 							{/*<li className="group relative pt-4 pb-4 has-child">ZanNovigator </li>*/}
 							<li className="group relative pt-4 pb-4 has-child">
 								<Link href="/" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-									Основная страница
-
+									ZanNavigator
 								</Link>
 								<ul className="drop-down-menu min-w-200">
 									<li>
@@ -79,50 +78,50 @@ const Header = ({ handleHidden }) => {
 
 								</Link>
 							</li>
-							<li className="group relative pt-4 pb-4 has-child">
-								<Link href="#" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-									Компания
+							{/*<li className="group relative pt-4 pb-4 has-child">*/}
+							{/*	<Link href="#" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*		Компания*/}
 
-								</Link>
-								<ul className="drop-down-menu min-w-200">
-									<li>
-										<Link href="/portfolio" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Портфолио
+							{/*	</Link>*/}
+							{/*	<ul className="drop-down-menu min-w-200">*/}
+							{/*		<li>*/}
+							{/*			<Link href="/portfolio" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Портфолио*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/team" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Команда
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/team" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Команда*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/testimonials" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Testimonials
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/testimonials" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Testimonials*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/pricing" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Цена
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/pricing" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Цена*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/faqs" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											-Вопросы и ответы
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/faqs" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				-Вопросы и ответы*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/404" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											404
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/404" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				404*/}
 
-										</Link>
-									</li>
-								</ul>
-							</li>
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*	</ul>*/}
+							{/*</li>*/}
 							<li className="group relative pt-4 pb-4 has-child">
 								<Link href="#" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
 									Блог

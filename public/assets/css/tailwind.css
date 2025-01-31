@@ -373,3 +373,15 @@ li.menu-item-has-children.active .menu-expand {
           animation: jump 1s linear alternate infinite;
 }
 /*# sourceMappingURL=main.css.map */
+
+.has-child {
+  list-style: none !important; /* Принудительно убирает стандартные маркеры */
+}
+
+.has-child::before,
+.has-child::after {
+  content: none !important; /* Убирает любые дополнительные элементы */
+  display: none !important;
+}
+
+
