@@ -3,11 +3,12 @@ import CounterUp from "../../components/elements/CounterUp"
 import Layout from '../../components/layout/Layout'
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from 'react'
 
 const Services = () => {
 	const [inViewport, setInViewport] = useState(false)
-
+	const router = useRouter();
 	const handleScroll = () => {
 		const elements = document.getElementsByClassName("counterUp")
 		if (elements.length > 0) {
@@ -91,7 +92,9 @@ const Services = () => {
 							<div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
 								<div
 									className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-									data-wow-delay=".5s">
+									data-wow-delay=".5s"
+									onClick={() => router.push('/doc')}
+								>
 									<div className="text-blue-500 mx-auto mb-4">
 										<svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor"
 											 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
