@@ -33,38 +33,32 @@ const Header = ({ handleHidden }) => {
 								<Link href="/" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
 									ZanNavigator
 								</Link>
-								<ul className="drop-down-menu min-w-200">
-									<li>
-										<Link href="/" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Пример начальной стр 1
+								{/*<ul className="drop-down-menu min-w-200">*/}
+								{/*	<li>*/}
+								{/*		<Link href="/" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+								{/*			Пример начальной стр 1*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/index-2" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											-Пример начальной стр 2
+								{/*		</Link>*/}
+								{/*	</li>*/}
+								{/*	<li>*/}
+								{/*		<Link href="/index-3" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+								{/*			Пример начальной стр 3*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/index-3" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Пример начальной стр 3
+								{/*		</Link>*/}
+								{/*	</li>*/}
+								{/*	<li>*/}
+								{/*		<Link href="/index-4" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+								{/*			Пример начальной стр 4*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/index-4" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Пример начальной стр 4
+								{/*		</Link>*/}
+								{/*	</li>*/}
+								{/*	<li>*/}
+								{/*		<Link href="/index-5" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+								{/*			Пример начальной стр 5*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/index-5" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Пример начальной стр 5
-
-										</Link>
-									</li>
-								</ul>
+								{/*		</Link>*/}
+								{/*	</li>*/}
+								{/*</ul>*/}
 							</li>
 							<li className="pt-4 pb-4">
 								<Link href="/about" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
@@ -122,38 +116,38 @@ const Header = ({ handleHidden }) => {
 							{/*		</li>*/}
 							{/*	</ul>*/}
 							{/*</li>*/}
-							<li className="group relative pt-4 pb-4 has-child">
-								<Link href="#" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-									Блог
+							{/*<li className="group relative pt-4 pb-4 has-child">*/}
+							{/*	<Link href="#" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*		Блог*/}
 
-								</Link>
-								<ul className="drop-down-menu min-w-200">
-									<li>
-										<Link href="/blog" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Категория 1
+							{/*	</Link>*/}
+							{/*	<ul className="drop-down-menu min-w-200">*/}
+							{/*		<li>*/}
+							{/*			<Link href="/blog" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Категория 1*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/blog-2" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Категория 2
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/blog-2" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Категория 2*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/blog-single" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Single 1
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/blog-single" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Single 1*/}
 
-										</Link>
-									</li>
-									<li>
-										<Link href="/blog-single-2" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-											Single 2
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*		<li>*/}
+							{/*			<Link href="/blog-single-2" className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">*/}
+							{/*				Single 2*/}
 
-										</Link>
-									</li>
-								</ul>
-							</li>
+							{/*			</Link>*/}
+							{/*		</li>*/}
+							{/*	</ul>*/}
+							{/*</li>*/}
 							<li className="pt-4 pb-4">
 								<Link href="/contact" className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
 									Контакты
