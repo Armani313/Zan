@@ -1,4 +1,3 @@
-import '../public/assets/css/animate.min.css'
 
 import "swiper/css"
 import '../public/assets/css/tailwind-built.css'
