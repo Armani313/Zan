@@ -33,29 +33,84 @@ function Home() {
 	return (
 		<>
 			<Layout>
-				<section className="xl:bg-contain bg-top bg-no-repeat -mt-24 pt-24" style={{ backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')" }}>
-					<div className="container px-4 mx-auto">
+				<section className="xl:bg-contain bg-top bg-no-repeat -mt-24 pt-12" style={{ backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')" }}>
+					<div className="w-full px-4 mx-auto">
 						<div className="pt-12 text-center">
-							<div className="max-w-2xl mx-auto mb-8">
-								<h2 className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
-									Наша цель -  <br />
-									доступные юридические услуги <span className="text-blue-500"> для каждого</span>
-								</h2>
-								<div className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn d-inline">
-									Мы <strong className="text-blue-500">Zan Navigator</strong>, укажем путь как выпутатся{" "}
+							<div className="mx-auto mb-8">
+								<h1 className="heading-blue text-3xl lg:text-9xl lg:leading-normal mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
+									Zan Navigator
+								</h1>
+								<div
+									className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn">
+									Ваш компас в решении юридических вопросов - <strong
+									className="text-blue-500"> БЕСПЛАТНО
+								</strong>
 									<div className="typewrite d-inline text-brand">
-										<TextEffect text1="Web Agency" text2="Social Marketing" />
+										<TextEffect text1="Web Agency" text2="Social Marketing"/>
 									</div>
 								</div>
 							</div>
-							<div>
-								<Link className="btn-primary py-4 px-8 mr-2 wow animate__animated animate__fadeIn hover-up-2" href="#key-features">
-									Ключевые возможности
-								</Link>
-								<Link className="btn-white wow animate__animated animate__fadeIn hover-up-2" data-wow-delay=".3s" href="#how-we-work">
-									Как это работает?
-								</Link>
+
+
+							{/*примущества*/}
+							<div className="mt-6 text-base text-green-500 text-center">
+								<ul className="list-none inline-block text-left">
+								<li className="flex items-center justify-center">
+										<svg
+											className="checkmark-green w-6 h-6 mr-2"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fillRule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clipRule="evenodd"
+											></path>
+										</svg>
+										<strong> доступность&nbsp;</strong>  <span className="text-gray-500">(сложные юр. вопросы своими словами) </span>
+									</li>
+									<li className="flex items-center justify-center mt-2">
+										<svg
+											className="checkmark-green w-6 h-6 mr-2"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fillRule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clipRule="evenodd"
+											></path>
+										</svg>
+										<strong>информативность&nbsp;</strong> <span className="text-gray-500">(экономит время и бюджет)</span>
+									</li>
+									<li className="flex items-center justify-center mt-2">
+										<svg
+											className="checkmark-green w-6 h-6 mr-2"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fillRule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clipRule="evenodd"
+											></path>
+										</svg>
+										<strong>квалификация&nbsp;</strong>  <span className="text-gray-500"> (тщательно проверенная информация)</span>/
+									</li>
+								</ul>
 							</div>
+
+							{/*<div>*/}
+							{/*	<Link*/}
+							{/*		className="btn-primary py-4 px-8 mr-2 wow animate__animated animate__fadeIn hover-up-2"*/}
+							{/*		href="#key-features">*/}
+							{/*		Ключевые возможности*/}
+							{/*	</Link>*/}
+							{/*	<Link className="btn-white wow animate__animated animate__fadeIn hover-up-2"*/}
+							{/*		  data-wow-delay=".3s" href="#how-we-work">*/}
+							{/*		Как это работает?*/}
+							{/*	</Link>*/}
+							{/*</div>*/}
 						</div>
 					</div>
 					{/*<div className="relative max-w-6xl mt-16 md:mt-8 mb-8 mx-auto">*/}
@@ -74,10 +129,14 @@ function Home() {
 					{/*</div>*/}
 					<div className="container px-4 mx-auto">
 						<div className="flex flex-wrap justify-between pt-8 pb-16">
-							<div className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-								<div className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-									<svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+							<div className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate__animated animate__fadeIn"
+								 data-wow-delay=".2s">
+								<div
+									className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
+									<svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+											  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
 									</svg>
 								</div>
 								<div className="sm:py-2 ml-2 sm:ml-6">
@@ -142,16 +201,35 @@ function Home() {
 								<div className="lg:py-6 lg:pr-77 wow animate__animated animate__fadeIn"
 									 data-wow-delay=".3s">
 									<div className="mb-4">
-										<span
-											className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
-											data-wow-delay=".9s">
-											Кто нас выбирает
-										</span>
+										{/*<span*/}
+										{/*	className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"*/}
+										{/*	data-wow-delay=".9s">*/}
+										{/*	Кто нас выбирает*/}
+										{/*</span>*/}
 										<h2 className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
 											data-wow-delay=".3s">
-											Ключевые возможности
+											<strong
+												className="text-blue-500"> ZanNavi
+											</strong> предлагает
 										</h2>
 									</div>
+									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
+										 data-wow-delay=".9s">
+										<div className="w-8 mr-5 text-blue-500">
+											<svg className="w-6 h-6" fill="none" stroke="currentColor"
+												 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+													  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+											</svg>
+										</div>
+										<div>
+											<h3 className="mb-2 text-xl font-semibold font-heading">База знаний</h3>
+											<p className="text-blueGray-400 leading-loose">разъяснения по
+												основным правовым вопросам.</p>
+										</div>
+									</div>
+
+
 									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
 										 data-wow-delay=".5s">
 										<div className="w-8 mr-5 text-blue-500">
@@ -162,12 +240,29 @@ function Home() {
 											</svg>
 										</div>
 										<div>
-											<h3 className="mb-2 text-xl font-semibold font-heading">Генерация
+											<h3 className="mb-2 text-xl font-semibold font-heading">Помощь в оформлении
 												документов</h3>
 											<p className="text-blueGray-400 leading-loose">автоматическое создание
-												юридических документов по введённым данным.</p>
+												обращеней, жалоб, заявленей и др.</p>
 										</div>
 									</div>
+
+									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
+										 data-wow-delay=".9s">
+										<div className="w-8 mr-5 text-blue-500">
+											<svg className="w-6 h-6" fill="none" stroke="currentColor"
+												 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+													  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+											</svg>
+										</div>
+										<div>
+											<h3 className="mb-2 text-xl font-semibold font-heading"> "Zannavi" -
+												Robot</h3>
+											<p className="text-blueGray-400 leading-loose"> помощник на базе ИИ</p>
+										</div>
+									</div>
+
 									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
 										 data-wow-delay=".7s">
 										<div className="w-8 mr-5 text-blue-500">
@@ -181,10 +276,12 @@ function Home() {
 										</div>
 										<div>
 											<h3 className="mb-2 text-xl font-semibold font-heading">Онлайн-консультации</h3>
-											<p className="text-blueGray-400 leading-loose">получение юридических советов
-												в режиме реального времени.</p>
+											<p className="text-blueGray-400 leading-loose"> контакт с юристом
+												в режиме реального времени</p>
 										</div>
 									</div>
+
+
 									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
 										 data-wow-delay=".9s">
 										<div className="w-8 mr-5 text-blue-500">
@@ -195,11 +292,11 @@ function Home() {
 											</svg>
 										</div>
 										<div>
-											<h3 className="mb-2 text-xl font-semibold font-heading">База знаний</h3>
-											<p className="text-blueGray-400 leading-loose"> статьи и разъяснения по
-												основным правовым вопросам.</p>
+											<h3 className="mb-2 text-xl font-semibold font-heading">Вопросы и ответы (форум)</h3>
+											<p className="text-blueGray-400 leading-loose"> обсуждение и рекомендации авторизованных участников</p>
 										</div>
 									</div>
+
 									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
 										 data-wow-delay=".9s">
 										<div className="w-8 mr-5 text-blue-500">
@@ -210,28 +307,17 @@ function Home() {
 											</svg>
 										</div>
 										<div>
-											<h3 className="mb-2 text-xl font-semibold font-heading">Юридический
-												чат-бот</h3>
-											<p className="text-blueGray-400 leading-loose"> быстрая навигация и ответы
-												на частые вопросы.</p>
+											<h3 className="mb-2 text-xl font-semibold font-heading">Рейтинг и отзывы
+												юристов</h3>
+											<p className="text-blueGray-400 leading-loose"> оценка пользователей услуг
+												юристов по реальным кейсам.</p>
 										</div>
 									</div>
-									<div className="flex items-start py-4 wow animate__animated animate__fadeIn"
-										 data-wow-delay=".9s">
-										<div className="w-8 mr-5 text-blue-500">
-											<svg className="w-6 h-6" fill="none" stroke="currentColor"
-												 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-													  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-											</svg>
-										</div>
-										<div>
-											<h3 className="mb-2 text-xl font-semibold font-heading">Рейтинг и отзывы юристов</h3>
-											<p className="text-blueGray-400 leading-loose"> оценка пользователей услуг юристов по реальным кейсам.</p>
-										</div>
-									</div>
+
+
 								</div>
 							</div>
+
 							<div className="relative w-full lg:w-1/2 my-12 lg:my-0">
 								<div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
 									<Image
@@ -253,7 +339,8 @@ function Home() {
 										height="0"
 										sizes="100vw"
 										style={{width: "auto", height: "auto"}}
-										className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="/assets/imgs/elements/blob-tear.svg" alt="Monst" />
+										className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
+										src="/assets/imgs/elements/blob-tear.svg" alt="Monst" />
 								</div>
 							</div>
 						</div>

@@ -2878,6 +2878,29 @@ li.menu-item-has-children.active .menu-expand {
 		font-size: 3rem !important;
 		line-height: 4rem !important;
 	}
+	.lg\:text-9xl {
+		font-size: 8rem !important;
+		line-height: 8rem !important;
+		white-space: nowrap !important;
+		text-align: center;
+	}
+
+	.checkmark-green {
+		fill: #48bb78 !important;
+	}
+	.heading-blue {
+		color: #213366 !important;
+	}
+
+	.section-anchor::before {
+		content: "";
+		display: block;
+		height: 6rem; /* Высота вашей шапки */
+		margin-top: -6rem; /* Отрицательный отступ равный высоте */
+	}
+
+
+
 
 	.lg\:text-base {
 		font-size: 1rem !important;
