@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function Chatbot() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [input, setInput] = useState("");
     const [messages, setMessages] = useState([
         { id: 1, text: "Привет! Чем могу помочь?", sender: "bot" },
