@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import Layout from '../../components/layout/Layout';
+import { Tab } from '@headlessui/react';
 import Link from 'next/link';
 
 const Blank = () => {
 	const [activeCategory, setActiveCategory] = useState('business');
+
 
 	return (
 		<Layout>
@@ -19,29 +21,29 @@ const Blank = () => {
 			</section>
 
 			<section className="py-8 bg-gray-200">
-				<div className="container mx-auto flex justify-center gap-4">
-					<button
-						onClick={() => setActiveCategory('business')}
-						aria-pressed={activeCategory === 'business'}
-						className={`px-6 py-3 rounded-lg shadow transition duration-200 ease-in-out cursor-pointer focus:outline-none ${
-							activeCategory === 'business'
-								? 'bg-blue-600 text-white'
-								: 'bg-white text-blue-500 border border-blue-500'
-						}`}
-					>
-						10 советов для вашего бизнеса
-					</button>
-					<button
-						onClick={() => setActiveCategory('labor')}
-						aria-pressed={activeCategory === 'labor'}
-						className={`px-6 py-3 rounded-lg shadow transition duration-200 ease-in-out cursor-pointer focus:outline-none ${
-							activeCategory === 'labor'
-								? 'bg-purple-600 text-white'
-								: 'bg-white text-purple-500 border border-purple-500'
-						}`}
-					>
-						10 советов в сфере трудовых отношений
-					</button>
+				<div className="container mx-auto">
+					<Tab.Group>
+						<Tab.List className="flex justify-center gap-4">
+							<Tab
+								className={({selected}) =>
+									selected
+										? "px-6 py-3 rounded-lg shadow-lg bg-blue-600 text-white"
+										: "px-6 py-3 rounded-lg shadow-lg bg-white text-blue-500 border border-blue-500 hover:bg-blue-50"
+								}
+							>
+								10 советов для вашего бизнеса
+							</Tab>
+							<Tab
+								className={({selected}) =>
+									selected
+										? "px-6 py-3 rounded-lg shadow-lg bg-purple-600 text-white"
+										: "px-6 py-3 rounded-lg shadow-lg bg-white text-purple-500 border border-purple-500 hover:bg-purple-50"
+								}
+							>
+								10 советов в сфере трудовых отношений
+							</Tab>
+						</Tab.List>
+					</Tab.Group>
 				</div>
 			</section>
 
