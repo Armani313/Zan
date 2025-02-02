@@ -109,7 +109,8 @@ const Services = () => {
 							<div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
 								<div
 									className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-									data-wow-delay=".7s">
+									data-wow-delay=".7s"
+									onClick={() => router.push('/knowledge-base')}>
 									<div className="text-blue-500 mx-auto mb-4">
 										<svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor"
 											 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
